@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11035FA7-D2E4-445E-AECF-D1CE7D77429B}|RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432.csproj|c:\\users\\kiril\\desktop\\\u043F\u04406\\regin_\u0442\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\pages\\addpincode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11035FA7-D2E4-445E-AECF-D1CE7D77429B}|RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432.csproj|solutionrelative:pages\\addpincode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11035FA7-D2E4-445E-AECF-D1CE7D77429B}|RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432.csproj|c:\\users\\kiril\\desktop\\\u043F\u04406\\regin_\u0442\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\pages\\regin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11035FA7-D2E4-445E-AECF-D1CE7D77429B}|RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432.csproj|solutionrelative:pages\\regin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11035FA7-D2E4-445E-AECF-D1CE7D77429B}|RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432.csproj|c:\\users\\kiril\\desktop\\\u043F\u04406\\regin_\u0442\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\pages\\confirmation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11035FA7-D2E4-445E-AECF-D1CE7D77429B}|RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432.csproj|solutionrelative:pages\\confirmation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11035FA7-D2E4-445E-AECF-D1CE7D77429B}|RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432.csproj|c:\\users\\kiril\\desktop\\\u043F\u04406\\regin_\u0442\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\pages\\confirmation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{11035FA7-D2E4-445E-AECF-D1CE7D77429B}|RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432.csproj|solutionrelative:pages\\confirmation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11035FA7-D2E4-445E-AECF-D1CE7D77429B}|RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432.csproj|c:\\users\\kiril\\desktop\\\u043F\u04406\\regin_\u0442\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\pages\\regin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{11035FA7-D2E4-445E-AECF-D1CE7D77429B}|RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432.csproj|solutionrelative:pages\\regin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Regin.xaml",
+              "DocumentMoniker": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\Pages\\Regin.xaml",
+              "RelativeDocumentMoniker": "Pages\\Regin.xaml",
+              "ToolTip": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\Pages\\Regin.xaml",
+              "RelativeToolTip": "Pages\\Regin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-02T09:57:25.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pages\\AddPinCode.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\Pages\\AddPinCode.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddPinCode.xaml.cs",
+              "ToolTip": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\Pages\\AddPinCode.xaml.cs",
+              "RelativeToolTip": "Pages\\AddPinCode.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T09:48:23.174Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Confirmation.xaml",
+              "DocumentMoniker": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\Pages\\Confirmation.xaml",
+              "RelativeDocumentMoniker": "Pages\\Confirmation.xaml",
+              "ToolTip": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\Pages\\Confirmation.xaml",
+              "RelativeToolTip": "Pages\\Confirmation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-02T10:10:12.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Confirmation.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\Pages\\Confirmation.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\Confirmation.xaml.cs",
+              "ToolTip": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\Pages\\Confirmation.xaml.cs",
+              "RelativeToolTip": "Pages\\Confirmation.xaml.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwEwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:04:11.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Regin.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\Pages\\Regin.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\Regin.xaml.cs",
+              "ToolTip": "C:\\Users\\kiril\\Desktop\\\u041F\u04206\\RegIn_\u0422\u0435\u043F\u043B\u044F\u043A\u043E\u0432\\Pages\\Regin.xaml.cs",
+              "RelativeToolTip": "Pages\\Regin.xaml.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwDkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T09:51:04.841Z",
+              "EditorCaption": ""
             }
           ]
         }

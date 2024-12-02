@@ -71,7 +71,7 @@ namespace RegIn_Тепляков.Pages
         void SetPassword()
         {
             Regex regex = new Regex(@"(?=.*[0-9])(?=.*[!@#$%^&?*\-_=])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&?*\-_=]{10,}");
-            BCorrectLogin = regex.IsMatch(TbPassword.Password);
+            BCorrectPassword = regex.IsMatch(TbPassword.Password);
             if (regex.IsMatch(TbPassword.Password) == true)
             {
                 SetNotification("", Brushes.Black);

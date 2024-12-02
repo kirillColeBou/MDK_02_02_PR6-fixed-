@@ -28,7 +28,7 @@
                 <Label Content="Enter code:" Margin="10,161,10,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="TbCode" Height="23" Margin="10,185,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" KeyUp="SetCode" LostFocus="SetCode"/>
                 <Label x:Name="LTimer" Margin="10,213,10,0" HorizontalContentAlignment="Center" Content="A second message can be sent after 60 seconds" VerticalAlignment="Top" FontSize="12"/>
-                <Button x:Name="BSendMessage" IsEnabled="False" Width="200px" Height="25" Content="Send message" Margin="46,235,54,43.2" Click="SendMail"/>
+                <Button x:Name="BSendMessage" IsEnabled="False" Width="200px" Height="25" Content="Send message" Margin="46,235,54,43.2" Click="OpenPinCode"/>
                 <Label Content="Back" Margin="10,273,10,0" VerticalAlignment="Top" Foreground="#FF673AB7" FontSize="10" MouseDown="OpenLogin"/>
             </Grid>
         </materialDesign:Card>

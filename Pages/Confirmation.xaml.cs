@@ -69,14 +69,16 @@ namespace RegIn_Тепляков.Pages
 
         void SetCode()
         {
+            string typeConfirmation;
             if (TbCode.Text == Code.ToString() && TbCode.IsEnabled == true)
             {
                 TbCode.IsEnabled = false;
-                if (ThisTypeConfirmation == TypeConfirmation.Login) MessageBox.Show("Авторизация пользователя успешно подтверждена.");
+                if (ThisTypeConfirmation == TypeConfirmation.Login) { typeConfirmation = "Login"; MainWindow.mainWindow.OpenPage(new AddPinCode(typeConfirmation)); }
                 else
                 {
                     MainWindow.mainWindow.userLogin.SetUser();
-                    MessageBox.Show("Регистрация пользователя успешно подтверждена.");
+                    typeConfirmation = "Regin"; 
+                    MainWindow.mainWindow.OpenPage(new AddPinCode(typeConfirmation));
                 }
             }
         }

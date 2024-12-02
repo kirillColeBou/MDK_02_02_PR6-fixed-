@@ -1,0 +1,31 @@
+﻿<Page x:Class="RegIn_Тепляков.Pages.AddPinCode"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RegIn_Тепляков.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="710"
+      Title="AddPinCode"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+      TextElement.FontWeight="Regular"
+      TextElement.FontSize="13"
+      TextOptions.TextFormattingMode="Ideal"
+      TextOptions.TextRenderingMode="Auto"
+      Background="{DynamicResource MaterialDesignPaper}"
+      FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <Grid>
+        <materialDesign:Card Height="304" VerticalAlignment="Center" HorizontalAlignment="Center" Width="307">
+            <Grid>
+                <Label Margin="10,67,10,0" HorizontalContentAlignment="Center" Content="Add a pin code for quick authorization." VerticalAlignment="Top" FontSize="15"/>
+                <Label x:Name="LPinCode" Margin="10,101.5,10,0" HorizontalContentAlignment="Center" Content="" VerticalAlignment="Top"/>
+                <Label Content="Enter pin code:" Margin="10,131,10,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="TbPinCode" Height="23" Margin="10,165,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" KeyUp="SetPinCode" LostFocus="SetPinCode"/>
+                <Button x:Name="BAddPinCode" IsEnabled="False" Width="200px" Height="25" Content="Add pin code" Margin="46,215,54,43.2" Click="AddPincode"/>
+                <Label Content="Another time" Margin="10,273,10,0" VerticalAlignment="Top" Foreground="#FF673AB7" FontSize="10" MouseDown="OpenMain" HorizontalContentAlignment="Center"/>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Page>

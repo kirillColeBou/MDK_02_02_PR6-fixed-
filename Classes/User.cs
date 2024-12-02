@@ -14,6 +14,7 @@ namespace RegIn_Тепляков.Classes
         public byte[] Image = new byte[0];
         public DateTime DateUpdate { get; set; }
         public DateTime DateCreate { get; set; }
+        public string PinCode { get; set; }
         public CorrectLogin HandlerCorrectLogin;
         public InCorrectLogin HandlerInCorrectLogin;
         public delegate void CorrectLogin();
@@ -26,6 +27,7 @@ namespace RegIn_Тепляков.Classes
             this.Password = String.Empty;
             this.Name = String.Empty;
             this.Image = new byte[0];
+            this.PinCode = String.Empty;
 
             MySqlConnection connection = WorkingDB.OpenConnection();
             if (WorkingDB.OpenConnection(connection))
@@ -45,6 +47,7 @@ namespace RegIn_Тепляков.Classes
                     }
                     this.DateUpdate = userQuery.GetDateTime(5);
                     this.DateCreate = userQuery.GetDateTime(6);
+                    this.PinCode = userQuery.GetString(7);
                     HandlerCorrectLogin.Invoke();
                 }
                 else HandlerInCorrectLogin.Invoke();
@@ -58,13 +61,14 @@ namespace RegIn_Тепляков.Classes
             MySqlConnection connection = WorkingDB.OpenConnection();
             if (WorkingDB.OpenConnection(connection))
             {
-                MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`Login`, `Password`, `Name`, `Image`, `DateUpdate`, `DateCreate`) VALUES (@Login, @Password, @Name, @Image, @DateUpdate, @DateCreate)", connection);
+                MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`Login`, `Password`, `Name`, `Image`, `DateUpdate`, `DateCreate`, `PinCode`) VALUES (@Login, @Password, @Name, @Image, @DateUpdate, @DateCreate, @PinCode)", connection);
                 command.Parameters.AddWithValue("@Login", this.Login);
                 command.Parameters.AddWithValue("@Password", this.Password);
                 command.Parameters.AddWithValue("@Name", this.Name);
                 command.Parameters.AddWithValue("@Image", this.Image);
                 command.Parameters.AddWithValue("@DateUpdate", this.DateUpdate);
                 command.Parameters.AddWithValue("@DateCreate", this.DateCreate);
+                command.Parameters.AddWithValue("@PinCode", String.Empty);
             }
             WorkingDB.CloseConnection(connection);
         }
@@ -78,6 +82,16 @@ namespace RegIn_Тепляков.Classes
                 if (WorkingDB.OpenConnection(connection)) WorkingDB.Query($"UPDATE `users` SET `Password` = '{this.Password}' WHERE `Login` = '{this.Login}'", connection);
                 WorkingDB.CloseConnection(connection);
                 SendMail.SendMessage($"Your account password has been changed.\nNew password: {this.Password}", this.Login);
+            }
+        }
+
+        public void AddPinCode(string PinCode)
+        {
+            if (Login != String.Empty)
+            {
+                MySqlConnection connection = WorkingDB.OpenConnection();
+                if (WorkingDB.OpenConnection(connection)) WorkingDB.Query($"UPDATE `users` SET `PinCode` = '{PinCode}' WHERE `Login` = '{this.Login}'", connection);
+                WorkingDB.CloseConnection(connection);
             }
         }
 
