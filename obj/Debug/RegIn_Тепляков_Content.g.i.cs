@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ic-mail.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ic-user.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sql/sql.sql")]
 
 

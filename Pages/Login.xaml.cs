@@ -35,6 +35,22 @@ namespace RegIn_Тепляков.Pages
             Capture.HandlerCorrectCapture += CorrectCapture;
         }
 
+        void enabledElements(bool flag)
+        {
+            if (flag)
+            {
+                TbLogin.IsEnabled = true;
+                TbPassword.IsEnabled = true;
+                Capture.IsEnabled = true;
+            }
+            else
+            {
+                TbLogin.IsEnabled = false;
+                TbPassword.IsEnabled = false;
+                Capture.IsEnabled = false;
+            }
+        }
+
         void animation(bool flag)
         {
             BitmapImage img = new BitmapImage();
@@ -107,7 +123,8 @@ namespace RegIn_Тепляков.Pages
             if (MainWindow.mainWindow.userLogin.Password != String.Empty)
             {
                 if (IsCapture)
-                    if (MainWindow.mainWindow.userLogin.Password == TbPassword.Password) MainWindow.mainWindow.OpenPage(new Confirmation(Confirmation.TypeConfirmation.Login));
+                    if (MainWindow.mainWindow.userLogin.Password == TbPassword.Password && MainWindow.mainWindow.userLogin.PinCode == String.Empty) MainWindow.mainWindow.OpenPage(new Confirmation(Confirmation.TypeConfirmation.Login));
+                    else if(MainWindow.mainWindow.userLogin.Password == TbPassword.Password && MainWindow.mainWindow.userLogin.PinCode != String.Empty) MainWindow.mainWindow.OpenPage(new AddPinCode("Login"));
                     else
                     {
                         if (CountSetPassword > 0)
@@ -129,12 +146,7 @@ namespace RegIn_Тепляков.Pages
         public void BlockAuthorization()
         {
             DateTime start = DateTime.Now.AddMinutes(3);
-            Dispatcher.Invoke(() =>
-            {
-                TbLogin.IsEnabled = false;
-                TbPassword.IsEnabled = false;
-                Capture.IsEnabled = false;
-            });
+            Dispatcher.Invoke(() => enabledElements(false));
             for (int i = 0; i < 180; i++)
             {
                 TimeSpan time = start.Subtract(DateTime.Now);
@@ -148,9 +160,7 @@ namespace RegIn_Тепляков.Pages
             Dispatcher.Invoke(() =>
             {
                 SetNotification("Hi, " + MainWindow.mainWindow.userLogin.Name, Brushes.Black);
-                TbLogin.IsEnabled = true;
-                TbPassword.IsEnabled = true;
-                Capture.IsEnabled = true;
+                enabledElements(true);
                 Capture.CreateCapture();
                 IsCapture = false;
                 CountSetPassword = 2;

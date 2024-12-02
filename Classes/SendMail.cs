@@ -13,7 +13,7 @@ namespace RegIn_Тепляков.Classes
             var smptClient = new SmtpClient("smtp.yandex.ru")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("yandex@yandex.ru", "password"),
+                Credentials = new NetworkCredential("Kirillteplycov123@yandex.ru", "adqxgstawemgddlg"),
                 EnableSsl = true
             };
             smptClient.Send("Kirillteplycov123@yandex.ru", to, "Проект RegIn", message);

@@ -68,3 +68,7 @@ C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\RegIn___.84BC384B.
 C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\RegIn_Тепляков.exe
 C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\RegIn_Тепляков.pdb
 C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\App.baml
+C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\Pages\AddPinCode.g.cs
+C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\Pages\Main.g.cs
+C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\Pages\AddPinCode.baml
+C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\Pages\Main.baml

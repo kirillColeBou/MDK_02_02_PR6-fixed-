@@ -217,6 +217,9 @@
     <Resource Include="Images\ic-mail.png" />
     <Resource Include="Images\ic-user.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL\SQL.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.5.1.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.5.1.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

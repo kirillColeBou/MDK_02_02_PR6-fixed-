@@ -69,6 +69,7 @@ namespace RegIn_Тепляков.Classes
                 command.Parameters.AddWithValue("@DateUpdate", this.DateUpdate);
                 command.Parameters.AddWithValue("@DateCreate", this.DateCreate);
                 command.Parameters.AddWithValue("@PinCode", String.Empty);
+                command.ExecuteNonQuery();
             }
             WorkingDB.CloseConnection(connection);
         }
