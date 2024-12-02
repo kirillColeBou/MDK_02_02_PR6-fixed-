@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="RegIn_Тепляков.Elements.ElementCapture"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RegIn_Тепляков.Elements"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="280">
+    <Grid>
+        <Grid x:Name="Capture" Height="50" VerticalAlignment="Top"/>
+        <Label Content="Enter Capture" Margin="0,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="InputCapture" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="25" VerticalAlignment="Top" Margin="0,75,0,0" KeyUp="EnterCapture"/>
+    </Grid>
+</UserControl>

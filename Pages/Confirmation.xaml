@@ -1,0 +1,36 @@
+﻿<Page x:Class="RegIn_Тепляков.Pages.Confirmation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RegIn_Тепляков.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="710"
+      Title="Confirmation"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+      TextElement.FontWeight="Regular"
+      TextElement.FontSize="13"
+      TextOptions.TextFormattingMode="Ideal"
+      TextOptions.TextRenderingMode="Auto"
+      Background="{DynamicResource MaterialDesignPaper}"
+      FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <Grid>
+        <materialDesign:Card Height="304" VerticalAlignment="Center" HorizontalAlignment="Center" Width="307">
+            <Grid>
+                <Image HorizontalAlignment="Center" Height="100" Margin="32" VerticalAlignment="Top" Width="100" Source="/RegIn_Тепляков;component/Images/ic-mail.png">
+                    <Image.Clip>
+                        <EllipseGeometry RadiusX="50" RadiusY="50" Center="50,50"/>
+                    </Image.Clip>
+                </Image>
+                <Label Margin="10,137,10,0" HorizontalContentAlignment="Center" Content="A message has been sent to your email." VerticalAlignment="Top"/>
+                <Label Content="Enter code:" Margin="10,161,10,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="TbCode" Height="23" Margin="10,185,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" KeyUp="SetCode" LostFocus="SetCode"/>
+                <Label x:Name="LTimer" Margin="10,213,10,0" HorizontalContentAlignment="Center" Content="A second message can be sent after 60 seconds" VerticalAlignment="Top" FontSize="12"/>
+                <Button x:Name="BSendMessage" IsEnabled="False" Width="200px" Height="25" Content="Send message" Margin="46,235,54,43.2" Click="SendMail"/>
+                <Label Content="Back" Margin="10,273,10,0" VerticalAlignment="Top" Foreground="#FF673AB7" FontSize="10" MouseDown="OpenLogin"/>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Page>
