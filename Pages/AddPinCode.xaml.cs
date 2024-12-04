@@ -28,6 +28,8 @@ namespace RegIn_Тепляков.Pages
 
         TypeConfirmation ThisTypeConfirmation;
         private static string typeConfirmation;
+        private bool isNotificationSet = false;
+
         public AddPinCode(string _typeConfirmation)
         {
             InitializeComponent();
@@ -50,20 +52,39 @@ namespace RegIn_Тепляков.Pages
             }
         }
 
+        private void SetText(object sender, RoutedEventArgs e)
+        {
+            if (isNotificationSet)
+            {
+                SetNotification("", Brushes.Black);
+                isNotificationSet = false;
+            }
+        }
+
         private void SetPinCode(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter) SetPinCode();
+            else if (isNotificationSet)
+            {
+                SetNotification("", Brushes.Black);
+                isNotificationSet = false;
+            }
         }
 
         void SetPinCode()
         {
             Regex regex = new Regex(@"\d{4}");
-            if (regex.IsMatch(TbPinCode.Text) == true)
+            if (regex.IsMatch(TbPinCode.Text))
             {
                 if (ThisTypeConfirmation == TypeConfirmation.Login)
                 {
-                    if(MainWindow.mainWindow.userLogin.PinCode != String.Empty && TbPinCode.Text == MainWindow.mainWindow.userLogin.PinCode) MainWindow.mainWindow.OpenPage(new Main());
-                    else if(MainWindow.mainWindow.userLogin.PinCode == String.Empty)
+                    if (MainWindow.mainWindow.userLogin.PinCode != String.Empty && MainWindow.mainWindow.userLogin.PinCode == TbPinCode.Text) MainWindow.mainWindow.OpenPage(new Main());
+                    else if (MainWindow.mainWindow.userLogin.PinCode != String.Empty && MainWindow.mainWindow.userLogin.PinCode != TbPinCode.Text)
+                    {
+                        SetNotification("Incorrect pin-code", Brushes.Red);
+                        isNotificationSet = true;
+                    }
+                    else if (MainWindow.mainWindow.userLogin.PinCode == String.Empty)
                     {
                         MainWindow.mainWindow.userLogin.AddPinCode(TbPinCode.Text);
                         MainWindow.mainWindow.OpenPage(new Main());
@@ -74,9 +95,12 @@ namespace RegIn_Тепляков.Pages
                     MainWindow.mainWindow.userLogin.AddPinCode(TbPinCode.Text);
                     MainWindow.mainWindow.OpenPage(new Main());
                 }
-                SetNotification("", Brushes.Black);
             }
-            else SetNotification("Invalid pin-code", Brushes.Red);
+            else
+            {
+                SetNotification("Invalid pin-code", Brushes.Red);
+                isNotificationSet = true;
+            }
         }
 
         private void AddPincode(object sender, RoutedEventArgs e) => SetPinCode();
@@ -88,5 +112,7 @@ namespace RegIn_Тепляков.Pages
         }
 
         private void OpenMain(object sender, MouseButtonEventArgs e) => MainWindow.mainWindow.OpenPage(new Main());
+
+        private void BackPage(object sender, MouseButtonEventArgs e) => MainWindow.mainWindow.OpenPage(new Login());
     }
 }

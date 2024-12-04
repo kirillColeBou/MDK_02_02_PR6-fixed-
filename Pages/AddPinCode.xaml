@@ -22,9 +22,10 @@
                 <Label x:Name="BTextPinCode" Margin="10,67,10,0" HorizontalContentAlignment="Center" Content="Add a pin code for quick authorization." VerticalAlignment="Top" FontSize="15"/>
                 <Label x:Name="LPinCode" Margin="10,101.5,10,0" HorizontalContentAlignment="Center" Content="" VerticalAlignment="Top"/>
                 <Label Content="Enter pin code:" Margin="10,131,10,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="TbPinCode" Height="23" Margin="10,165,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" KeyUp="SetPinCode"/>
+                <TextBox x:Name="TbPinCode" Height="23" Margin="10,165,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" KeyUp="SetPinCode" GotFocus="SetText"/>
                 <Button x:Name="BAddPinCode" Width="200px" Height="25" Content="Add pin code" Margin="46,215,54,43.2" Click="AddPincode"/>
-                <Label x:Name="LAnotherTime" Content="Another time" Margin="10,273,10,0" VerticalAlignment="Top" Foreground="#FF673AB7" FontSize="10" MouseDown="OpenMain" HorizontalContentAlignment="Center"/>
+                <Label Content="Back" Margin="10,273,10,0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF673AB7" FontSize="10" MouseDown="BackPage" HorizontalContentAlignment="Center"/>
+                <Label x:Name="LAnotherTime" Content="Another time" Margin="10,273,10,0" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF673AB7" FontSize="10" MouseDown="OpenMain" HorizontalContentAlignment="Center"/>
             </Grid>
         </materialDesign:Card>
     </Grid>

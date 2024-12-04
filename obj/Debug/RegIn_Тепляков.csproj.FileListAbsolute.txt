@@ -72,3 +72,4 @@ C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\Pages\AddPinCode.g
 C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\Pages\Main.g.cs
 C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\Pages\AddPinCode.baml
 C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\Pages\Main.baml
+C:\Users\kiril\Desktop\ПР6\RegIn_Тепляков\obj\Debug\RegIn_Тепляков_Content.g.cs
